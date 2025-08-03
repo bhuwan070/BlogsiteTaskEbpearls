@@ -14,6 +14,7 @@ export const getUserProfile = async (req, res, next) => {
     res.status(200).json({
       success: true,
       user: {
+        userId: user._id,
         username: user.username,
         posts: user.posts,
       },
@@ -43,6 +44,7 @@ export const updateUserProfile = async (req, res, next) => {
       success: true,
       message: 'User profile updated successfully',
       user: {
+        userId: user._id,
         username: user.username,
       },
     });

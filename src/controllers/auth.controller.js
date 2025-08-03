@@ -20,6 +20,7 @@ export const registerUser = async (req, res, next) => {
       success: true,
       message: 'User registered successfully',
       token,
+      userId: user._id,
     });
   } catch (error) {
     next(error);
@@ -46,6 +47,7 @@ export const loginUser = async (req, res, next) => {
       success: true,
       message: 'Login successful',
       token,
+      userId: user._id,
     });
   } catch (error) {
     next(error);
