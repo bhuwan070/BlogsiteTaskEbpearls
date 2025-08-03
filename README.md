@@ -42,7 +42,7 @@ src/
 - **auth.route.js**: `/api/auth` endpoints for login, signup, etc.
 - **post.route.js**: `/api/posts` endpoints for creating, updating, deleting, and fetching posts.
 - **search.route.js**: `/api/search` endpoints for searching posts and users.
-- **user.route.js**: `/api/users` endpoints for user profile management.
+- **user.route.js**: `/api/user` endpoints for user profile management.
 
 ## Getting Started
 
