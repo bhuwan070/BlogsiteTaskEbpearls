@@ -1,0 +1,509 @@
+{
+	"info": {
+		"_postman_id": "c069c12d-1ae3-489a-815b-865d2eb19c47",
+		"name": "BlogsiteEbpearls",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34277869",
+		"_collection_link": "https://hospital-9332.postman.co/workspace/hospital-Workspace~3ce4a3f4-c42b-435b-bd42-8d1b39a87596/collection/34277869-c069c12d-1ae3-489a-815b-865d2eb19c47?action=share&source=collection_link&creator=34277869"
+	},
+	"item": [
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "getuserProfile",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OGYxMWFkOTQ4ZDhkNjJjM2QzOGI4YiIsImlhdCI6MTc1NDIwNjY1MywiZXhwIjoxNzU0MjEwMjUzfQ.sKNpV8jM_i7x01axzQSgakbY6A53KQdlndxHeI5LFgg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://blogsitetaskebpearls-1.onrender.com/api/user/profile",
+							"protocol": "https",
+							"host": [
+								"blogsitetaskebpearls-1",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateUserProfile",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OGU3MTZhODY1MWVjY2NlZTFlMmQwYiIsImlhdCI6MTc1NDE2NTY2OCwiZXhwIjoxNzU0MTY5MjY4fQ.Xw24f0EPbHZ3MJr_b57Kl7WCrGcAwFuatOMLnRf9EIs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"username\": \"hello123\",\r\n  \"password\": \"123123\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://blogsitetaskebpearls-1.onrender.com/api/user/profile",
+							"protocol": "https",
+							"host": [
+								"blogsitetaskebpearls-1",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"profile"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "post",
+			"item": [
+				{
+					"name": "createpost",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OGU4MGRhMjUyMDlhOTE4NzU1ZmJhOSIsImlhdCI6MTc1NDE2OTYwMywiZXhwIjoxNzU0MTczMjAzfQ.eJvbmzb4FCqkbV9H15fuVWLmDTrW8v3uS38G7CaZbaw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"title\": \"xyqqz\",\r\n  \"content\": \"it easier to work with asynchronous code...\",\r\n\"tags\": [\"Technology\", \"Education\"]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://blogsitetaskebpearls-1.onrender.com/api/post",
+							"protocol": "https",
+							"host": [
+								"blogsitetaskebpearls-1",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"post"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getPost",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "getpostByid",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://blogsitetaskebpearls-1.onrender.com/api/post/688e7d3dfcc621b63de554f8",
+							"protocol": "https",
+							"host": [
+								"blogsitetaskebpearls-1",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"post",
+								"688e7d3dfcc621b63de554f8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "comment",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OGU3MTZhODY1MWVjY2NlZTFlMmQwYiIsImlhdCI6MTc1NDE2NTY2OCwiZXhwIjoxNzU0MTY5MjY4fQ.Xw24f0EPbHZ3MJr_b57Kl7WCrGcAwFuatOMLnRf9EIs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"content\": \"Great article!\"\r\n   \r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://blogsitetaskebpearls-1.onrender.com/api/post/688e7d3dfcc621b63de554f8/comment",
+							"protocol": "https",
+							"host": [
+								"blogsitetaskebpearls-1",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"post",
+								"688e7d3dfcc621b63de554f8",
+								"comment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deletepost",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OGU3MTZhODY1MWVjY2NlZTFlMmQwYiIsImlhdCI6MTc1NDE2NTY2OCwiZXhwIjoxNzU0MTY5MjY4fQ.Xw24f0EPbHZ3MJr_b57Kl7WCrGcAwFuatOMLnRf9EIs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://blogsitetaskebpearls-1.onrender.com/api/post/688e7d3dfcc621b63de554f8/",
+							"protocol": "https",
+							"host": [
+								"blogsitetaskebpearls-1",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"post",
+								"688e7d3dfcc621b63de554f8",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updatepost",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OGU4MGRhMjUyMDlhOTE4NzU1ZmJhOSIsImlhdCI6MTc1NDE2OTYwMywiZXhwIjoxNzU0MTczMjAzfQ.eJvbmzb4FCqkbV9H15fuVWLmDTrW8v3uS38G7CaZbaw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"title\": \"aba\",\r\n  \"content\": \"it easier to work with asynchronous code...\",\r\n\"tags\": [\"Technology\", \"Education\"]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://blogsitetaskebpearls-1.onrender.com/api/post/688e814325209a918755fbae",
+							"protocol": "https",
+							"host": [
+								"blogsitetaskebpearls-1",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"post",
+								"688e814325209a918755fbae"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"username\": \"bhuwan\",\r\n  \"password\": \"Secure123\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://blogsitetaskebpearls-1.onrender.com/api/auth/register",
+							"protocol": "https",
+							"host": [
+								"blogsitetaskebpearls-1",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OGU4MGRhMjUyMDlhOTE4NzU1ZmJhOSIsImlhdCI6MTc1NDE2OTU2MiwiZXhwIjoxNzU0MTczMTYyfQ.EOLIwHhpgmQfsNgdehRykjxfOl2NfoQGuHfztQs0LX8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"username\": \"bhuwan\",\r\n  \"password\": \"Secure123\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://blogsitetaskebpearls-1.onrender.com/api/auth/login",
+							"protocol": "https",
+							"host": [
+								"blogsitetaskebpearls-1",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Search",
+			"item": [
+				{
+					"name": "searchByauthor",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OGU3MTZhODY1MWVjY2NlZTFlMmQwYiIsImlhdCI6MTc1NDE2NTY2OCwiZXhwIjoxNzU0MTY5MjY4fQ.Xw24f0EPbHZ3MJr_b57Kl7WCrGcAwFuatOMLnRf9EIs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://blogsitetaskebpearls-1.onrender.com/api/search/author?username=hello123",
+							"protocol": "https",
+							"host": [
+								"blogsitetaskebpearls-1",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"search",
+								"author"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "hello123"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "searchbyTitle",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OGU3MTZhODY1MWVjY2NlZTFlMmQwYiIsImlhdCI6MTc1NDE2NTY2OCwiZXhwIjoxNzU0MTY5MjY4fQ.Xw24f0EPbHZ3MJr_b57Kl7WCrGcAwFuatOMLnRf9EIs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://blogsitetaskebpearls-1.onrender.com/api/search/title?title=xyz",
+							"protocol": "https",
+							"host": [
+								"blogsitetaskebpearls-1",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"search",
+								"title"
+							],
+							"query": [
+								{
+									"key": "title",
+									"value": "xyz"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "searchBytag",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OGU3MTZhODY1MWVjY2NlZTFlMmQwYiIsImlhdCI6MTc1NDE2NTY2OCwiZXhwIjoxNzU0MTY5MjY4fQ.Xw24f0EPbHZ3MJr_b57Kl7WCrGcAwFuatOMLnRf9EIs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://blogsitetaskebpearls-1.onrender.com/api/search/tags?tags=Technology",
+							"protocol": "https",
+							"host": [
+								"blogsitetaskebpearls-1",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"search",
+								"tags"
+							],
+							"query": [
+								{
+									"key": "tags",
+									"value": "Technology"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
